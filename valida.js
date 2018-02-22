@@ -1,44 +1,6 @@
 /*
 author: @tobioye88
-company: supersoft
- */
-
-/*
-Version 1.2
-**set option first
-var options = [
-{
-	name: 'fieldName',
-	rules: 'required|numeric|integer|decimal|min[9]|max[9]|exactly[9]|
-			alphabet|alpanumeric|matches(fieldname)|
-			email|
-			fileType[jpg,jpeg,png,gif]|fileSizeMax|fileNumMax|fileNumMin'[,
-	message:{'required':"Custom message for each rule"[,]}];
-}[,{...}]
-]
-var v = new Validator('[namer=form]', options, function(errors){
-	if(errors.length>0){
-	//failed
-	}else{
-	//passed
-	}
-}
-
-
-});
-//check box
-(cb.checked)? '' : '';
-if(this.elementType == 'radio'){
-	//radio
-	// value = e.options[e.selectedIndex].value || e.options[e.selectedIndex].text;
-	for (var i=0; i < e.length; i++) {
-		if (e[i].checked) {
-			value = e[i].value;
-			break;
-		}
-	}
-}
- */
+*/
 
 var Valida = function (form, options, callback){
 	var v = this;
