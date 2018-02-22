@@ -1,4 +1,4 @@
-# Valida
+# Valida.js
 
 ## Usage
 ```javascript
@@ -35,7 +35,7 @@ var myValida = new Valida('[name=formName]', options, function(errors, event){
 * fileNumMax  - Maximum number of files
 * fileNumMin - Minimum number of files
 
-## If element is not on in DOM use
+## If element is not in DOM use
 
 ```javascript
 myValida.reload();
@@ -55,6 +55,12 @@ var options = [
 ```
 
 ## Example
+
+add a lint to the doucment in the head of the project or file
+
+```html
+<script type="text/javascript" src="link/to/valida.js"></script>
+```
 
 ```html
 <form action="" method="post" name="login">
@@ -85,7 +91,7 @@ var myValida = new Valida('[name=login]', options, function(errors, event){
 	if(errors.length > 0){
 		//failed
 		errors.forEach(obj, index){
-			obj.element.style
+			obj.element.style.borderColor = 'red';
 		});
 	}else{
 		//Do passed
